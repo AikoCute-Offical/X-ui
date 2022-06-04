@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# AikoXrayR
+# Aiko X-UI
 X-ui AikoCute Projects
 
 [![](https://img.shields.io/badge/Telegram-group-green?style=flat-square)](https://t.me/aikocutehotme)
