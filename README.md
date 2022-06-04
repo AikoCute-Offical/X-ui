@@ -9,7 +9,6 @@ XrayR AikoCute Projects
 [![](https://img.shields.io/badge/Telegram-channel-blue?style=flat-square)](https://t.me/AikoCute_Support)
 [![](https://img.shields.io/github/downloads/AikoCute-Offical/X-ui/total.svg?style=flat-square)](https://github.com/AikoCute/XrayR/releases)
 [![](https://img.shields.io/github/v/release/AikoCute-Offical/X-ui?style=flat-square)](https://github.com/AikoCute/XrayR/releases)
-[![Build and Release](https://github.com/AikoCute-Offical/X-ui/actions/workflows/release.yml/badge.svg)](https://github.com/AikoCute-Offical/X-ui/actions/workflows/release.yml)
 <img alt="visited" src="https://badges.pufler.dev/visits/AikoCute-Offical/X-ui"/>
 </div>
 
