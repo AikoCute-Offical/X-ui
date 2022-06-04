@@ -109,7 +109,7 @@ task:
     - mv /tmp/ci/platform/xui-amd64 /tmp/ci/x-ui/src-zip/x-ui/x-ui
     - mv /tmp/ci/XrayPrebuilt/Xray-core/OUT/xray-amd64 /tmp/ci/x-ui/src-zip/x-ui/bin/xray-linux-amd64
     - cd /tmp/ci/x-ui/src-zip/x-ui
-    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS AMD64" && git remote add origin git@github.com:dopaemon/x-ui.git
+    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS AMD64" && git remote add origin git@github.com:AikoCute-Offical/X-ui.git
     - git checkout -b "X-UI-$VERSIONS-AMD64"
     - echo "yes" | git push -uf origin "X-UI-$VERSIONS-AMD64"
   branch_arm64_script:
@@ -119,7 +119,7 @@ task:
     - mv /tmp/ci/platform/xui-arm64 /tmp/ci/x-ui/src-zip/x-ui/x-ui
     - mv /tmp/ci/XrayPrebuilt/Xray-core/OUT/xray-arm64 /tmp/ci/x-ui/src-zip/x-ui/bin/xray-linux-arm64
     - cd /tmp/ci/x-ui/src-zip/x-ui
-    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS ARM64" && git remote add origin git@github.com:dopaemon/x-ui.git
+    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS ARM64" && git remote add origin git@github.com:AikoCute-Offical/X-ui.git
     - git checkout -b "X-UI-$VERSIONS-ARM64"
     - echo "yes" | git push -uf origin "X-UI-$VERSIONS-ARM64"
   branch_s390x_script:
@@ -129,7 +129,7 @@ task:
     - mv /tmp/ci/platform/xui-s390x /tmp/ci/x-ui/src-zip/x-ui/x-ui
     - mv /tmp/ci/XrayPrebuilt/Xray-core/OUT/xray-s390x /tmp/ci/x-ui/src-zip/x-ui/bin/xray-linux-s390x
     - cd /tmp/ci/x-ui/src-zip/x-ui
-    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS S390X" && git remote add origin git@github.com:dopaemon/x-ui.git
+    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS S390X" && git remote add origin git@github.com:AikoCute-Offical/X-ui.git
     - git checkout -b "X-UI-$VERSIONS-S390X"
     - echo "yes" | git push -uf origin "X-UI-$VERSIONS-S390X"
   branch_riscv64_script:
@@ -139,7 +139,7 @@ task:
     - mv /tmp/ci/platform/xui-riscv64 /tmp/ci/x-ui/src-zip/x-ui/x-ui
     - mv /tmp/ci/XrayPrebuilt/Xray-core/OUT/xray-riscv64 /tmp/ci/x-ui/src-zip/x-ui/bin/xray-linux-riscv64
     - cd /tmp/ci/x-ui/src-zip/x-ui
-    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS RISCV64" && git remote add origin git@github.com:dopaemon/x-ui.git
+    - git init && git add -vA && git commit -sm "Release: X-UI $VERSIONS RISCV64" && git remote add origin git@github.com:AikoCute-Offical/X-ui.git
     - git checkout -b "X-UI-$VERSIONS-RISCV64"
     - echo "yes" | git push -uf origin "X-UI-$VERSIONS-RISCV64"
   github_script:
