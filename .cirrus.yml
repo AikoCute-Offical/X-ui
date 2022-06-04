@@ -2,18 +2,18 @@ env:
     CIRRUS_CLONE_DEPTH: 1
     BUILD_HOSTNAME: "CirrusCI"
     CIRRUS_WORKING_DIR: "/tmp/ci"
-    TOKEN: "ENCRYPTED[!fe92b05186850ad5deb3f6b17c377c157b7f4eb2b23b5c51f27f9779ac4e6acc537b41972fb3b3ce97b8b640eb414a55!]"
-    VERSIONS: "0.3.4.4-Developer-6"
+    TOKEN: "ENCRYPTED[df92376488018baa89ee8f2b0d43eaae16224de669d67bce5261d4bd3031c7c9203742a610c5410ffe9eb89a5a9ca275]"
+    VERSIONS: "0.3.4.4-AikoCute"
     INFORELEASE: "X-UI Vietnamese Language\n\nNgưng support 32Bit\nThêm Bot Telegram và CloudFlare\nChấp nhận clear dung lượng đã dùng\nThông báo dung lượng qua Telegram\n\nSupport: amd64, arm64v8a, s390x.\n\n*** Vui lòng tạo Issues nếu có bất kỳ lỗi nào"
     DEBIAN_FRONTEND: "noninteractive"
-    SSHKEY1: "ENCRYPTED[!e6706dd32621e320165c4cbc6a710c42329ed1149221addf97dd393018e52bf72b2b9b3cdae7cc1aba7863d394a53f46!]"
-    SSHKEY2: "ENCRYPTED[!a5d564aa645ea61bb70aa6ce21a8f8bb51766a8b9fc80dec8aebcf34df41a0afd66f6e7766acea683fece365311949e8!]"
-    USERNAME: "ENCRYPTED[!84300cf406cc0695b827f4cbc9883c7712ab134798e1347bccac9395580fd618298d6dd1ff7897e77eea3a3203fda42b!]"
-    EMAIL: "ENCRYPTED[!a03cbd7c4b2f675b5535c1199bc8bd6eb2f30db7812c7846e372b3e51d00d3c1b4de9e7654bf683c1e5728aba6bfba0e!]"
+    SSHKEY1: "ENCRYPTED[293cefeab7ac826d4338d7754ffdf9c6601927edf806809e067e7f939210dcbe642f6d9791edf819e4a27842bcfc1f21]"
+    SSHKEY2: "ENCRYPTED[5d133af9570c87e3668778d042e901f56033f7494b0b4f33e80319bd01bc58261c3c81516306af985183cd35ff16f7ac]"
+    USERNAME: "ENCRYPTED[83bbe1770c3805ba3c246dbce1b3fd4741041b2e79d9ce7b497205bc0dccd3a202aef0e3110bc3cdc83b7b58073baf76]"
+    EMAIL: "ENCRYPTED[0d359a6ad7f05df414539e7cc0af7d12393669897e6ad7b66b396ed403227cda156ce559593eead6657bd299bd068912]"
 
 task:
   name: Compile X-UI
-  only_if: $CIRRUS_REPO_OWNER == 'dopaemon' && $CIRRUS_BRANCH == 'main'
+  only_if: $CIRRUS_REPO_OWNER == 'AikoCute-Offical' && $CIRRUS_BRANCH == 'main'
   skip: $CIRRUS_BRANCH != 'main'
   container:
     image: dopaemon/bionic:latest
@@ -54,8 +54,8 @@ task:
     - sudo mkdir -p /tmp/ci/platform/
     - sudo chmod 777 /tmp/ci/x-ui/
     - sudo chmod 777 /tmp/ci/platform/
-    - git clone -b main --single-branch --depth="1" https://github.com/dopaemon/x-ui.git /tmp/ci/x-ui/src
-    - echo "$VERSIONS By https://github.com/dopaemon" > /tmp/ci/x-ui/src/config/version
+    - git clone -b main --single-branch --depth="1" https://github.com/AikoCute-Offical/X-ui.git /tmp/ci/x-ui/src
+    - echo "$VERSIONS By https://github.com/AikoCute-Offical" > /tmp/ci/x-ui/src/config/version
   env-targz_script:
     - sudo mkdir -p /tmp/ci/x-ui/src-zip/x-ui/bin
     - sudo chmod 777 /tmp/ci/x-ui/src-zip/x-ui/bin
@@ -149,29 +149,29 @@ task:
     - mkdir -p /tmp/ci/arm64
     - mkdir -p /tmp/ci/s390x
     - mkdir -p /tmp/ci/riscv64
-    - git clone -b "X-UI-$VERSIONS-AMD64" --single-branch https://github.com/dopaemon/x-ui.git /tmp/ci/amd64/x-ui
+    - git clone -b "X-UI-$VERSIONS-AMD64" --single-branch https://github.com/AikoCute-Offical/X-ui.git /tmp/ci/amd64/x-ui
     - cd /tmp/ci/amd64/
     - rm -rvf x-ui/.git
     - tar -czvf x-ui-linux-amd64.tar.gz x-ui
     - cd /
-    - git clone -b "X-UI-$VERSIONS-ARM64" --single-branch https://github.com/dopaemon/x-ui.git /tmp/ci/arm64/x-ui
+    - git clone -b "X-UI-$VERSIONS-ARM64" --single-branch https://github.com/AikoCute-Offical/X-ui.git /tmp/ci/arm64/x-ui
     - cd /tmp/ci/arm64/
     - rm -rvf x-ui/.git
     - tar -czvf x-ui-linux-arm64.tar.gz x-ui
     - cd /
-    - git clone -b "X-UI-$VERSIONS-S390X" --single-branch https://github.com/dopaemon/x-ui.git /tmp/ci/s390x/x-ui
+    - git clone -b "X-UI-$VERSIONS-S390X" --single-branch https://github.com/AikoCute-Offical/X-ui.git /tmp/ci/s390x/x-ui
     - cd /tmp/ci/s390x/
     - rm -rvf x-ui/.git
     - tar -czvf x-ui-linux-s390x.tar.gz x-ui
     - cd /
-    - git clone -b "X-UI-$VERSIONS-RISCV64" --single-branch https://github.com/dopaemon/x-ui.git /tmp/ci/riscv64/x-ui
+    - git clone -b "X-UI-$VERSIONS-RISCV64" --single-branch https://github.com/AikoCute-Offical/X-ui.git /tmp/ci/riscv64/x-ui
     - cd /tmp/ci/riscv64/
     - rm -rvf x-ui/.git
     - tar -czvf x-ui-linux-riscv64.tar.gz x-ui
     - cd /
   release_script:
     - cd /tmp/ci
-    - git clone -b main --single-branch https://github.com/dopaemon/x-ui.git
+    - git clone -b main --single-branch https://github.com/AikoCute-Offical/X-ui.git
     - mkdir -p /tmp/ci/out/
     - mv /tmp/ci/amd64/x-ui-linux-amd64.tar.gz /tmp/ci/out/
     - mv /tmp/ci/arm64/x-ui-linux-arm64.tar.gz /tmp/ci/out/
@@ -181,5 +181,5 @@ task:
     - touch mytoken.txt
     - echo "$TOKEN" > mytoken.txt
     - gh auth login --with-token < mytoken.txt
-    - bash <(curl -Ls https://raw.githubusercontent.com/dopaemon/x-ui/main/release.sh)
+    - bash <(curl -Ls https://raw.githubusercontent.com/AikoCute-Offical/X-ui/main/release.sh)
     - echo "yes" | gh release create $VERSIONS /tmp/ci/out/*.tar.gz --notes "$INFORELEASE" --title "X-UI $VERSIONS - Weekly - $(date +"%d-%m-%Y")"
