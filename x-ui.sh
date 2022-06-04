@@ -94,7 +94,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/dopaemon/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/AikoCute-Offical/x-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -113,7 +113,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/dopaemon/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/AikoCute-Offical/x-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         LOGI "Cập nhật hoàn tất, bảng điều khiển đã được tự động khởi động lại "
         exit 0
@@ -302,7 +302,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/dopaemon/x-ui/raw/master/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://raw.githubusercontent.com/AikoCute-Offical/X-ui/main/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Tập lệnh tải xuống không thành công, vui lòng kiểm tra xem máy có thể kết nối được không Github"
@@ -573,7 +573,7 @@ show_menu() {
 ██║  ██║██║   ██║██╔══██╗██╔══██║
 ██████╔╝╚██████╔╝██║  ██║██║  ██║
 ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-https://github.com/dopaemon/x-ui.git
+https://github.com/AikoCute-Offical
 ————————————————
   ${green}x-ui Tập lệnh quản lý bảng điều khiển${plain}
   ${green}0.${plain} Thoát Script

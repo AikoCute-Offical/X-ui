@@ -1,4 +1,4 @@
-<h1 align="center">X-UI Unofficial.</h1>
+<h1 align="center">X-UI AikoCute.</h1>
 <p>
   <img alt="visited" src="https://badges.pufler.dev/visits/dopaemon/x-ui" /> <img alt="buildcheck" src="https://api.cirrus-ci.com/github/dopaemon/x-ui.svg" />
 </p>
