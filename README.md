@@ -18,19 +18,19 @@ Linux:
 Tắt Unikey trước khi chạy Script. Tránh trình trạng Sai Mật Khẩu
 ```
 ```
-sudo -s
+sudo -i
 ```
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/dopaemon/x-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/AikoCute-Offical/x-ui/main/install.sh)
 ```
 ## ⚠️⚠️⚠️ Làm ơn không dùng cách này để install x-ui
 ```
-sudo bash <(curl -Ls https://raw.githubusercontent.com/dopaemon/x-ui/main/install.sh)
+sudo bash <(curl -Ls https://raw.githubusercontent.com/AikoCute-Offical/x-ui/main/install.sh)
 ```
 # Contributors
 
 <p>
-  <img alt="Contributors" src="https://badges.pufler.dev/contributors/dopaemon/x-ui?size=50&padding=5&bots=true" />
+  <img alt="Contributors" src="https://badges.pufler.dev/contributors/AikoCute-Offical/x-ui?size=50&padding=5&bots=true" />
 </p>
 
 ## Owner: Dự án gốc nằm ở đây [**vaxilu**](https://github.com/vaxilu/x-ui) - Tôi chỉ phát triển nó cho người Việt Nam dễ tiếp cận hơn.
