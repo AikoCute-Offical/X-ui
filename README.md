@@ -1,7 +1,16 @@
-<h1 align="center">X-UI AikoCute.</h1>
-<p>
-  <img alt="visited" src="https://badges.pufler.dev/visits/AikoCute-Offical/x-ui" /> <img alt="buildcheck" src="https://api.cirrus-ci.com/github/AikoCute-Offical/x-ui.svg" />
-</p>
+<p align="center"><img src="https://avatars.githubusercontent.com/u/91626055?v=4" width="128" /></p>
+
+<div align="center">
+
+# Aiko X-UI
+X-ui AikoCute Projects
+
+[![](https://img.shields.io/badge/Telegram-group-green?style=flat-square)](https://t.me/aikocutehotme)
+[![](https://img.shields.io/badge/Telegram-channel-blue?style=flat-square)](https://t.me/AikoCute_Support)
+[![](https://img.shields.io/github/downloads/AikoCute-Offical/X-ui/total.svg?style=flat-square)](https://github.com/AikoCute/XrayR/releases)
+[![](https://img.shields.io/github/v/release/AikoCute-Offical/X-ui?style=flat-square)](https://github.com/AikoCute/XrayR/releases)
+<img alt="visited" src="https://badges.pufler.dev/visits/AikoCute-Offical/X-ui"/>
+</div>
 
 > Đây Là Phiên Bản X-UI được Việt Hoá và cập nhật Xray định kỳ. kèm các bản vá Pull.
 

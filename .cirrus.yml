@@ -3,7 +3,7 @@ env:
     BUILD_HOSTNAME: "CirrusCI"
     CIRRUS_WORKING_DIR: "/tmp/ci"
     TOKEN: "ENCRYPTED[df92376488018baa89ee8f2b0d43eaae16224de669d67bce5261d4bd3031c7c9203742a610c5410ffe9eb89a5a9ca275]"
-    VERSIONS: "0.3.4.4-AikoCute"
+    VERSIONS: "1.0.1-AikoCute"
     INFORELEASE: "X-UI Vietnamese Language\n\nNgưng support 32Bit\nThêm Bot Telegram và CloudFlare\nChấp nhận clear dung lượng đã dùng\nThông báo dung lượng qua Telegram\n\nSupport: amd64, arm64v8a, s390x.\n\n*** Vui lòng tạo Issues nếu có bất kỳ lỗi nào"
     DEBIAN_FRONTEND: "noninteractive"
     SSHKEY1: "ENCRYPTED[293cefeab7ac826d4338d7754ffdf9c6601927edf806809e067e7f939210dcbe642f6d9791edf819e4a27842bcfc1f21]"
