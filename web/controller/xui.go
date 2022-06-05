@@ -30,7 +30,7 @@ func (a *XUIController) initRouter(g *gin.RouterGroup) {
 }
 
 func (a *XUIController) index(c *gin.Context) {
-	html(c, "index.html", "Hệ Thống X-UI", nil)
+	html(c, "index.html", "Aiko X-ui", nil)
 }
 
 func (a *XUIController) inbounds(c *gin.Context) {
