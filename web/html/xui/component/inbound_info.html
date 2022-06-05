@@ -29,7 +29,7 @@
     <p v-if="inbound.xtls">xtls: <a-tag color="green">Bật</a-tag></p>
 </template>
 <template v-else>
-    <p>tls: <a-tag color="red">Khép kín</a-tag></p>
+    <p>tls: <a-tag color="red">Đóng</a-tag></p>
 </template>
 <p v-if="inbound.tls">
     tls tên miền: <a-tag :color="inbound.serverName ? 'green' : 'orange'">[[ inbound.serverName ? inbound.serverName : "không có" ]]</a-tag>
