@@ -2,15 +2,15 @@
 <a-form layout="inline">
     <a-form-item>
         <span slot="label">
-                sniffing
+                Sniffing
                 <a-tooltip>
                     <template slot="title">
-                        Không có nhu cầu đặc biệt để giữ mặc định
+                        Không có nhu cầu đặc biệt để giữ mặc định ( Để bật để sử dụng được Zalo)
                     </template>
                     <a-icon type="question-circle" theme="filled"></a-icon>
                 </a-tooltip>
             </span>
-        <a-switch v-model="inbound.sniffing.disabled"></a-switch>
+        <a-switch v-model="inbound.sniffing.enable"></a-switch>
     </a-form-item>
 </a-form>
 {{end}}
